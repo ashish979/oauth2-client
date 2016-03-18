@@ -1,24 +1,7 @@
-## README
+Sample application to test Oauth2 provider.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Step to setup:<br>
+1. Install ruby 2.3.0.<br>
+2. Clone the application.<br>
+3. Bundle install<br>
+4. rails s -p 4000 (run rails server on 4000 port)
