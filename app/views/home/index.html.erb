@@ -1,0 +1,8 @@
+<% if session[:user_id] %>
+  You are signed in with <%= session[:provider] %>
+  <%= link_to "Sign out", sign_out_path %>
+<% else %>
+  <%= link_to "Sign in with HUB", "/auth/doorkeeper" %><br/>
+  <%= link_to "Sign in with twitter", "/auth/twitter" %>
+<% end %>
+<h1>Welcome to Client app</h1>
