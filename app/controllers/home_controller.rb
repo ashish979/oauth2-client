@@ -25,4 +25,9 @@ class HomeController < ApplicationController
     session[:provider] = nil
     redirect_to root_path, notice: "Successfully Signed out!!"
   end
+
+  def omniauth_callback_error_handler
+    flash[:error] = "#{env['omniauth.error'].message}"
+    redirect_to root_path
+  end
 end
